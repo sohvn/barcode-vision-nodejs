@@ -74,24 +74,11 @@ const image = await readFile("./image.jpg");
 const results = await scan(image);
 ```
 
-## Requirements
+## Output
 
-- Node.js
-- Node.js-compatible image input as `Buffer`
+Each result contains:
 
-The model and required runtime dependencies are included with the package.
-
-## GitHub
-
-https://github.com/sohvn/barcode-vision-nodejs
-
-## Issues
-
-Found a bug or have a feature request?
-
-https://github.com/sohvn/barcode-vision-nodejs/issues
-
-## Keywords
-
-barcode, barcode-scanner, barcode-reader, qr-code, qr-scanner,
-qr-decoder
+* `type` — `Barcode` or `QRCode`
+* `confidence` — detection confidence
+* `decoded` — whether the code was successfully decoded
+* `value` — decoded value, or `null` if decoding failed
