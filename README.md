@@ -81,6 +81,17 @@ const results = await scan(image);
 
 The model and required runtime dependencies are included with the package.
 
-## License
+## GitHub
 
-MIT
+https://github.com/sohvn/barcode-vision-nodejs
+
+## Issues
+
+Found a bug or have a feature request?
+
+https://github.com/sohvn/barcode-vision-nodejs/issues
+
+## Keywords
+
+barcode, barcode-scanner, barcode-reader, qr-code, qr-scanner,
+qr-decoder
